@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension	type="module" version="2.5" client="site" method="upgrade">
+	<name>JLV Facebook Login</name>
+	<author>Le Xuan Thanh</author>
+	<creationDate>30/08/2012</creationDate>
+	<copyright>Copyright (C) 2010 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>jlvextension@gmail.com</authorEmail>
+	<authorUrl>http://www.joomla.name.vn</authorUrl>
+	<version>2.5.1</version>
+	<description>JLV Facebook Login Module</description>
+	<files>
+		<filename module="mod_jlv_facebooklogin">mod_jlv_facebooklogin.php</filename>
+		<folder>tmpl</folder>
+		<folder>src</folder>
+		<folder>customimages</folder>
+		
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_jlv_facebooklogin.xml</filename>
+		
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jlv_facebooklogin.ini</language>
+		<language tag="en-GB">en-GB.mod_jlv_facebooklogin.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_LOGIN" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="appId"
+					type="text"
+					label="COM_MODULES_FIELD_APPID_LABEL"
+					description="COM_MODULES_FIELD_APPID_DESC" />
+				
+				<field
+					name="secret"
+					type="text"
+					label="COM_MODULES_FIELD_SECRET_LABEL"
+					description="COM_MODULES_FIELD_SECRET_DESC" />
+				
+				<field
+					name="loginform"
+					type="radio"
+					default="1"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_LOGINFORM_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_LOGINFORM_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="forgot"
+					type="radio"
+					default="1"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_FORGOT_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_FORGOT_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="forgotuser"
+					type="radio"
+					default="1"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_FORGOTUSER_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_FORGOTUSER_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="create"
+					type="radio"
+					default="1"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_CREATE_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_CREATE_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="pretext"
+					type="textarea"
+					filter="safehtml"
+					cols="30"
+					rows="5"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_PRE_TEXT_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_PRE_TEXT_DESC" />
+				<field
+					name="posttext"
+					type="textarea"
+					filter="safehtml"
+					cols="30"
+					rows="5"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_POST_TEXT_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_POST_TEXT_DESC" />
+				<field
+					name="login"
+					type="menuitem"
+					disable="separator"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_LOGIN_REDIRECTURL_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_LOGIN_REDIRECTURL_DESC" >
+					<option
+						value="">JDEFAULT</option>
+				</field>
+				<field
+					name="logout"
+					type="menuitem"
+					disable="separator"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_LOGOUT_REDIRECTURL_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_LOGOUT_REDIRECTURL_DESC" >
+					<option
+						value="">JDEFAULT</option>
+				</field>
+				<field
+					name="greeting"
+					type="radio"
+					default="1"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_GREETING_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_GREETING_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="name"
+					type="list"
+					default="0"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_NAME_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_NAME_DESC">
+					<option
+						value="0">MOD_JLVFACEBOOKLOGIN_VALUE_NAME</option>
+					<option
+						value="1">MOD_JLVFACEBOOKLOGIN_VALUE_USERNAME</option>
+				</field>
+				<field
+					name="loading"
+					type="radio"
+					default="1"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_LOADING_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_LOADING_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="loading_msg"
+					type="textarea"
+					filter="safehtml"
+					cols="30"
+					rows="5"
+					label="MOD_JLVFACEBOOKLOGIN_FIELD_LOADING_MSG_LABEL"
+					description="MOD_JLVFACEBOOKLOGIN_FIELD_LOADING_MSG_DESC" />
+				<field
+					name="modalwidth"
+					type="text"
+					label="COM_MODULES_FIELD_MODALWIDTH_LABEL"
+					description="COM_MODULES_FIELD_MODALWIDTH_DESC" />
+				<field
+					name="modalheight"
+					type="text"
+					label="COM_MODULES_FIELD_MODALHEIGHT_LABEL"
+					description="COM_MODULES_FIELD_MODALHEIGHT_DESC" />
+				<field
+					name="facebookimage"
+					type="imagelist"
+					default="Large_230x36.png"
+					label="COM_MODULES_FIELD_SELECTIMAGE_LABEL"
+					description="COM_MODULES_FIELD_SELECTIMAGE_DESC"
+					directory="modules/mod_jlv_facebooklogin/customimages/"
+					exclude=""
+					stripext="" />
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

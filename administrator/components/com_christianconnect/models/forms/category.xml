@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details">
+		<field name="id" type="text" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="title" type="text" class="inputbox"
+			size="25" label="COM_CHRISTIAN_CATEGORY_NAME_LABEL"
+			description="COM_CHRISTIAN_CATEGORY_NAME_DESC" required="true" />
+			
+			<field name="map_pin" type="media" class="inputbox" directory="mappins"
+			size="40" label="COM_CHRISTIAN_CATEGORY_MAP_PIN_LABEL"
+			description="COM_CHRISTIAN_CATEGORY_MAP_PIN_DESC" required="true" />
+			
+		<field name="published" type="list"
+			label="JSTATUS" description="COM_CHRISTIAN_FIELD_STATE_DESC"
+			class="inputbox" size="1" default="1" >
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			
+		</field>
+		
+	</fieldset>
+
+</form>

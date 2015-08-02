@@ -1,0 +1,298 @@
+
+.clear { clear:both }
+.spacer	{ height:10px }
+
+/* ARTICLE TITLES */
+h2 { padding:0; margin:0; font-weight:normal; font-size:1.25em }
+h2 a { text-decoration:none }
+.item-page h1, .blog-featured h1, .edit h1, .search h1 { font-size:1.2em; font-weight:normal } /* h1 on frontpage */
+.item { padding:0px 5px 10px 5px; display:block }
+.item h2 { margin:0 0px 10px 0px }
+.item-page { padding:0 5px; display:block }
+
+/* Image Shadow Controls */
+.item-page img, .blog-featured img { padding:3px; background:#fff; -moz-box-shadow:0 0 7px #babcbc; -webkit-box-shadow:0 0 7px #babcbc; box-shadow:0 0 7px #babcbc; position:relative}
+
+/*Language Switcher Module*/
+.mod-languages li { list-style:none;  display:inline; background-image:none; padding:0; margin:0 2px 0 0 }
+
+/*** Joomla! specific content elements ***/
+/* small text */
+.small, .modifydate, .createdate { font-size:.85em; color:#d55104; font-weight:normal }
+.small { text-align:left }
+.modifydate { height:20px; vertical-align:bottom; text-align:left }
+.createdate { height:20px; vertical-align:top; padding:0 0 5px 0 }
+p.readmore a { margin:4px 5px 0 0; display:block; float:right; background:url(../images/read.png) no-repeat; line-height:25px; text-decoration:none; text-align:center; font-size:.85em; clear:right; color:#fff; font-weight:bold; width:100px; height:25px }
+
+/* ___________  icons  ______________ */
+.actions { margin:0 0 5px 0; display:block; clear:both }
+.actions li { list-style:none; display:block; float:right; margin:4px 2px }
+.actions a { text-decoration:none }
+
+/* ___________  details  ______________ */
+.article-info { margin:10px 0 10px 0px; font-size:0.9em }
+.article-info-term { display:none }
+dt.category-name, dt.create, dt.modified, dt.createdby { float:left; padding-right:5px }
+.archive .article-info dd, .article-info dd { margin:2px 0 0px 0; line-height:1.2em }
+.article-info dd span { text-transform:none; display:inline-block; padding:0 5px 0 0; margin:0 10px 0 0px }
+
+/* spacers */
+span.article_separator { display:block; height:20px }
+.article_column { padding-right:5px }
+.column_separator { border-left:1px dashed #ccc; padding-left:10px }
+table.blog span.article_separator { display:block; height:20px }
+
+/*______buttons____*/
+.button { 
+    white-space:nowrap;
+	width:80px; 
+	height:22px; 
+	line-height:14px;
+	border:0; 
+	padding:0; 
+	margin:5px 0 0 0; 
+	color:#fff; 
+	font-size:12px; 
+	background:url(../images/button.png) no-repeat;
+	display:block;
+}
+
+/* table of contents */
+table.contenttoc { margin:5px; border:1px solid #ccc; padding:5px; float:right }
+table.contenttoc td { padding: 0 5px }
+
+/* content tables */
+td.sectiontableheader { background:#ccc; font-weight: bold; padding: 4px; border-right: 1px solid #fff }
+tr.sectiontableentry0 td, tr.sectiontableentry1 td, tr.sectiontableentry2 td { padding: 4px }
+td.sectiontableentry0, td.sectiontableentry1, td.sectiontableentry2 { padding: 3px }
+table.weblinks th, table.newsfeeds th, table.category th, table.jlist-table th { border:1px solid #ccc; background:#eee } /*contact bg*/
+
+/* content styles */
+.contentpaneopen, .contentpane { margin:0 auto; padding:10px; width:95% }
+.contentpaneopen li { margin-bottom: 5px }
+.contentpaneopen fieldset { border:0; border-top: 1px solid #000 }
+.contentpaneopen h3 { margin-top:25px }
+.highlight { background:#fffebb }
+.contentpane { background:#fff; color:#000 }
+.contentpane a, .contentpane a:hover { }
+.contentpane h2, .contentpane h1 { color:#000; background:none }
+
+/* mailto window */
+#mailto-window { padding:13px; position:relative; background:#f5f6f3 }
+#mailto-window label { width:9em }
+.mailto-close { position:absolute; right:0; top:5px; background:none }
+.mailto-close a { background:url(../images/close.png) no-repeat !important; min-width:25px; min-height:25px; display:block; overflow:visible }
+.mailto-close a  span { position:absolute; left:-3000px; top:-3000px; display:inline }
+#mailto-window  .inputbox { padding:3px }
+#mailto-window p { margin:20px 0 0 0 }
+#mailto-window button { margin:0 5px 0 0 }
+
+/* ______________ blog _______________ */
+.cols-1 { display:block; float:none !important; margin:0 !important }
+.cols-2 .column-1 { width:46%; float:left }
+.cols-2 .column-2 { width:46%; float:right; margin:0 }
+.cols-3 .column-1 { float:left; width:29%; padding:5px; margin-right:4% }
+.cols-3 .column-2 { float:left; width:29%; margin-left:0; padding:5px }
+.cols-3 .column-3 { float:right; width:29%; padding:5px }
+.items-row { overflow:hidden }
+.column-1, .column-2, .column-3 { padding:5px }
+.column-2 { width:55%; margin-left:40% }
+.column-3 { width:30% }
+.blog .category-desc { padding:0 5px; margin:10px 0 }
+.blog-featured { padding: 0 }
+.items-leading { padding:0 5px 7px 5px; overflow:hidden; margin:0 0 6px 0 }
+.row-separator { display:block; clear:both; margin:0; border:0; height:1px }
+.item-separator { display:none; margin:0 }
+.shownocolumns { width:98% !important }
+
+
+
+/* _______________  pagination  ___________________ */
+.pagination{margin:3px 0; padding:10px 5px;}
+span.pagination { margin:5px 0px; /*padding:10px 5px */ display:block; float:left; padding:0;}
+span.pagination span, span.pagination a { padding:5px 10px; margin:5px; background:#fff; color:#333; border:1px solid #ccc; text-decoration:none; display:inline-block; float:left; cursor:pointer;}
+span.pagination span:hover, span.pagination a:hover{background:#0D729B; color:#fff;} 
+span.pagination span.inactiveactivepage{background:#0d729b; color:#fff; display:block;}
+span.pagination ul { list-style-type:none; text-align:left }
+p.counter{ font-weight:bold; background:none; }
+/* pagenav */
+ul.pagenav { list-style-type:none; padding:0; overflow:hidden; font-weight:bold; float:right }
+ul.pagenav li { display:inline-block; padding:1px; margin:0 }
+ul.pagenav li a { display:inline; padding:4px }
+ul.pagenav li.pagenav_prev {}
+ul.pagenav li.pagenav_next {}
+
+/* ________________ contacts _______________ */
+.contact { padding:5px }
+.contact img { margin-left:5px }
+.contact fieldset { border:none }
+.panel, .contact-miscinfo { padding:7px 0 }
+.contact-category { padding:0 12px }
+.contact-category  #adminForm fieldset.filters { border:0; padding:0 }
+.contact-image { float:right; margin:10px 10px 0 0; overflow:hidden }
+address { font-style:normal; margin:10px 0 }
+address span { display:block }
+.contact-address { margin:20px 0 10px 0 }
+.contact-email div { padding:2px 0; margin:0 0 10px 0 }
+.contact-email label { width:5em; float:left } /*shares with form fieldset dt*/
+span.contact-image { margin-bottom:10px; overflow:hidden; display:block }
+#contact-textmsg { padding: 2px 0 10px 0 }
+#contact-email-copy { float:left; margin-right:10px }
+.contact .button { float:none !important; display:block; clear:left; margin:8px 0 0 0; white-space:nowrap }
+p.error { padding:10px } /* Error Message contact form */
+
+/*________________forms ________________ */
+#searchForm { margin:0; padding:0 }
+form#searchForm input { vertical-align: middle }
+form#searchForm table { border-collapse: collapse }
+form#searchForm td { padding:0 }
+#mod_search_searchword { padding-left: 3px }
+form .search label { display:none; margin:0; padding:0 } /* removes "text" content */
+#search label { display:none; margin:0; padding:0 }
+table.adminform textarea { width:540px; height:400px }
+#member-registration { padding:0 5px }
+form fieldset dt { clear:left; float:left; width:14em; padding:3px 0 }
+form fieldset dd { float:left; padding:3px 0 }
+#searchForm .inputbox { background-color:#fff; width:inherit; color:#000; margin:0; padding:0; border:1px solid #ccc; float:none }
+.form-limit { margin-top:10px }
+.phrases-box { width:65%; float:left }
+
+/*______________ user profile _________________ */
+#user-registration fieldset { margin:5px 0 }
+#user-registration dt { clear:left; float:left; width:10em }
+#users-profile-core, #users-profile-custom { margin:10px 0 15px 0; /*padding:15px */}
+#users-profile-core dt, #users-profile-custom dt { float:left; width:12em; padding:3px 0 }
+#users-profile-core dd, #users-profile-custom dd { padding:3px 0 }
+#member-profile fieldset, .registration fieldset { margin:10px 0 15px 0; padding:15px }
+#users-profile-core legend, #users-profile-custom legend, .profile-edit legend, .registration legend { font-weight:bold; color:#000; }
+.profile-edit form#member-profile fieldset dd, .registration form#member-registration fieldset dd { float:none; padding:5px 0}
+.profile-edit form#member-profile fieldset dd input, .profile-edit form#member-profile fieldset dd select, .registration form#member-registration fieldset dd input
+{width:17em}
+.profile-edit form#member-profile fieldset dt, .registration form#member-registration fieldset dt {padding:5px 5px 5px 0; width:13em}
+span.optional {font-size:0.9em}
+.red { font-weight:bold; color:#c00 }
+.star { color:#cc0000 }
+
+/*______________ login _________________ */
+#login-form p { padding:0 0 2px 0 }
+.moduletable #login-form li { background-image:none; list-style:none; font-size:.85em; line-height:14px; margin:0; padding:0 }
+#login-form, .userdata { padding:0; margin:0 }
+#login-form fieldset { padding:0; border:0 } 
+#login-form fieldset.input { padding:5px 0 0 0; margin:0 0 10px 5px }
+#login-form label { margin:0 5px 2px 0; width:12em; display:block; float:left }
+#modlgn-username.inputbox, #modlgn-passwd.inputbox { width:150px; height:12px; border:1px solid #ccc; padding:4px; }
+#modlgn-remember  { width:16px; border:none; margin:0 }
+#form-login-remember label { float:none; width:auto; display:inline }
+#login-form div { margin:0; padding:0; text-align:left }
+input.button, button.button { /*padding:3px 5px 6px 7px*/padding:2px 5px 6px 7px; cursor:pointer; }
+#modlgn-username, #modlgn-passwd { width:9em }
+.module_content #form-login-username label, .module_content #form-login-password label { float:left }
+.login-fields { margin:10px 0 }
+.login-fields label { float:left; width:10em }
+
+/* thumbnails */
+div.mosimage {  margin:5px }
+div.mosimage_caption { font-size:.9em }
+div.caption { padding:0 10px 0 10px; }
+div.caption img { border:1px solid #ccc }
+div.caption p { font-size:.9em; text-align:center }
+
+/*_____________ tables __________________ */
+table { border-collapse:collapse }
+table.weblinks, table.category { font-size:1em; margin:8px 10px 15px 0px; width:99%; border:1px solid #ccc }
+table.weblinks td { border-collapse:collapse }
+table.weblinks td, table.category td { padding:7px; border:1px solid #ccc }
+table.weblinks th, table.category th { padding:7px; text-align:left }
+td.num { vertical-align:top; text-align:left }
+.odd { background:#eee }
+td.hits { vertical-align:top; text-align:center }
+.filter {  margin:10px 0 }
+.display-limit, .filter { text-align:right; margin-right:7px }
+
+/* __________ category table _____________ */
+table.category th a img { padding:2px 10px }
+.filter-search { float:left }
+fieldset.filters { padding:0 }
+legend.element-invisible { position:absolute; /* need margin top and left doesn't work for the legend element */ margin-left:-3000px; margin-top:-3000px; height:0 }
+.cat-items { margin-top:20px }
+.category-list { margin:0 0 0 15px }
+
+/* Parameter Table */
+table.paramlist { margin-top:5px }
+table.paramlist td.paramlist_key { width:128px; text-align:left; height:30px }
+table.paramlist td.paramlist_value {}
+div.message { font-weight:bold; font-size :14px; text-align:center; width:auto; margin:3px 0px 10px; padding:3px 20px }
+
+/*_____________ Frontend Editing ____________*/
+fieldset {/* border: 1px solid #ccc; margin:15px 0; padding: 15px */}
+legend { margin:0; padding:3px 0 }
+td.key { border-bottom:1px solid #eee; color:#000 }
+form#adminForm fieldset { padding:20px 15px; margin:10px 0 15px 0 }
+.formelm { margin:5px 0 }
+.formelm label { width:13em; display:inline-block; vertical-align:top }
+form#adminForm .formelm-area { padding:5px 0 }
+form#adminForm .formelm-area label { vertical-align:top; display:inline-block; width:7.9em }
+.formelm-buttons { text-align:right; margin-bottom:10px }
+.button2-left { margin:5px 0 }
+.contentpaneopen_edit { float:left } /* edit button */
+
+/* pagebreak  */
+table.contenttoc {  padding:10px; margin:10px }
+table.contenttoc tr td { padding:1px 0px }
+.pagenavcounter { font-weight:bold }
+.pagenav { padding:0 2px } /*  pagination  */
+
+/* Tooltips */
+div.tooltip  { float:left; background:#ffc;  border:1px solid #D4D5AA; padding:5px; max-width: 200px }
+div.tooltip h4 { padding: 0; margin: 0; font-size: 95%; font-weight: bold; margin-top:-15px; padding-top:15px; padding-bottom: 5px }
+.tip { border:solid 1px #333; background:#ffffcc; padding:5px }
+
+/* -- editor buttons */
+#editor-xtd-buttons { padding:5px; font-size:.85em }
+.toggle-editor { font-size:.85em; margin:-5px 0 0 0; padding:0 }
+.button2-left, .button2-right, .button2-left div, .button2-right div { float:left }
+.button2-left a, .button2-right a, .button2-left span, .button2-right span { display:block; height:22px; float:left; line-height:22px; color:#000; cursor:pointer } /*font-size */
+.button2-left span, .button2-right span {cursor:default; color:#000 }
+.button2-left .page a, .button2-right .page a, .button2-left .page span, .button2-right .page span { padding:0 6px }
+.page span { color:#000; font-weight:bold }
+.button2-left a:hover, .button2-right a:hover { text-decoration:none; color:#0B55C4 }
+.button2-left a, .button2-left span { text-decoration:none; padding:0 24px 0 6px }
+.button2-right a, .button2-right span { text-decoration:none; padding:0 6px 0 24px }
+.button2-left { background: url(../../system/images/j_button2_left.png) no-repeat; float:left; margin-left:5px }
+.button2-right { background: url(../../system/images/j_button2_right.png) 100% 0 no-repeat; float:left; margin-left:5px }
+.button2-left .image { background: url(../../system/images/j_button2_image.png) 100% 0 no-repeat }
+.button2-left .readmore { background: url(../../system/images/j_button2_readmore.png) 100% 0 no-repeat }
+.button2-left .pagebreak { background: url(../../system/images/j_button2_pagebreak.png) 100% 0 no-repeat }
+.button2-left .blank, .button2-left .article { background: url(../../system/images/j_button2_blank.png) 100% 0 no-repeat; float:left; margin-left:5px }
+
+/* form validation */
+.invalid { border-color:#ff0000 }
+label.invalid { color:#ff0000 }
+
+/* System Standard Messages */
+.error { padding:0; margin-bottom: 20px }
+.error h2 { color:red !important; font-size:1.4em !important; text-transform:uppercase; padding:0 0 0 0px !important }
+#system-message { color:#000 }
+#system-message { margin:0 0 20px 0; padding:10px }
+#system-message dd.message ul { list-style:none; background:#eee; border:1px solid #ddd; /*margin:0 0 0 -40px;*/ margin:0 0 0 0px; padding:10px 0 10px 10px; text-indent:0px }
+/* System Error Messages */
+#system-message dd.error ul { list-style:none; color:#c00; background:#eee; border:1px solid #ddd; /*margin:0 0 0 -40px;*/ margin:0 0 0 0px; padding:10px 0 10px 10px; text-indent:0px;}
+/* System Notice Messages */
+#system-message dd.notice ul { list-style:none; color:#c00; background:#eee; border:1px solid #ddd; /*margin:0 0 0 -40px;*/ margin:0 0 0 0px; padding:10px 0 10px 10px; text-indent:0px;}
+#system-message .message ul li { list-style:none; background-image:none }
+
+/**For elements that aren't to be seen by users unless the user does something -like clicking on a header to see the collapsed section. */
+.element-hidden, .hide { display:none }
+/* For elements that aren't to be seen by visual users but do need to be read by screenreaders.
+* Cannot be used for elements that can get focus such as links and form elements */
+.element-invisible, .hidelabeltxt { height:0; overflow:hidden; position: absolute }
+/* Firefox has issues styling legend so this is a universal fix for making the legend invisible (i.e. visually it's not there, but screen readers see it */
+legend.element-invisible { position: absolute !important; margin:0; padding:0; border:0; margin-left: -10000px; font-size:1px; height:0 }
+fieldset.filters { border:none; margin:0 }
+
+/*HTML EDITOR */
+body.mceContentBody { background-color:#fff !important; background-image: none; color:#333 }
+body.mceContentBody a { color:#333 }
+
+.calendar .button{background:none; padding:0; color:#333; display:table-cell; font-size:11px; height:auto;}
+

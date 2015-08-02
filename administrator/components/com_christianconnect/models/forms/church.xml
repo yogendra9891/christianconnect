@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+           <field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+            readonly="true" class="readonly" 
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+            <field name="cname" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_NAME_LABEL"
+            description="COM_CHRISTIAN_CHURCH_NAME_DESC" required="true"/> 
+            
+            <field name="category" type="category" default="" 
+            label="COM_CHRISTIAN_CHURCH_CATEGORY_LABEL" class="inputbox validate-category"      
+            description="COM_CHRISTIAN_CHURCH_CATEGORY_DESC" required="true" /> 
+            
+			<field name="address1" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_ADDRESS1_LABEL"
+            description="COM_CHRISTIAN_CHURCH_ADDRESS1_DESC" required="true" /> 
+            
+             <field name="address2" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_ADDRESS2_LABEL"
+            description="COM_CHRISTIAN_CHURCH_ADDRESS2_DESC"  /> 
+            
+             <field name="city" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_CITY_LABEL"
+            description="COM_CHRISTIAN_CHURCH_CITY_DESC" required="true" /> 
+            
+             <field name="state" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_STATE_LABEL"
+            description="COM_CHRISTIAN_CHURCH_STATE_DESC" required="true" /> 
+            
+             <field name="country" type="country" default="" 
+            label="COM_CHRISTIAN_CHURCH_COUNTRY_LABEL" class="inputbox validate-country" 
+            description="COM_CHRISTIAN_CHURCH_COUNTRY_DESC" required="true" /> 
+            
+             <field name="postcode" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_POSTCODE_LABEL"
+            description="COM_CHRISTIAN_CHURCH_POSTCODE_DESC"  /> 
+            
+             <field name="phone" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_PHONE_LABEL" class="inputbox validate-phone"
+            description="COM_CHRISTIAN_CHURCH_PHONE_DESC"  /> 
+            
+             <field name="siteurl" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_WEBSITE_LABEL"
+            description="COM_CHRISTIAN_CHURCH_WEBSITE_DESC"  /> 
+            
+            <field name="subscription_price" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_PRICE_LABEL" class="inputbox validate-numeric"
+            description="COM_CHRISTIAN_CHURCH_PRICE_DESC" required="true" /> 
+            
+            <field name="published" type="list"
+			label="JSTATUS" description="COM_CHRISTIAN_FIELD_STATE_DESC"
+			class="inputbox" size="1" default="1" >
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			
+		   </field>
+         
+         
+	</fieldset>
+
+</form>

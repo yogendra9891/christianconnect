@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_MYFRIEND_LIST" option="COM_MYFRIEND_OPTION">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_MYFRIEND"
+		/>
+		<message>
+			<![CDATA[COM_MYFRIEND_LIST]]>
+		</message>
+	</layout>
+</metadata>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<extension version="2.5" type="template">
+	<name>theme_free-church004</name>
+	<creationDate>05/30/12</creationDate>
+	<author>Design Essentials Inc.</author>
+	<authorEmail>info@design-essentials.net</authorEmail>
+	<authorUrl>http://www.design-essentials.net</authorUrl>
+	<copyright>Copyright 2012 Design Essentials Inc. All Rights Reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>2.5.0</version>
+	<description>A Joomla! template</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.html</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>template_preview.png</filename>
+		<filename>PIE.php</filename>
+		<filename>PIE.htc</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>html</folder>
+	</files>
+<positions>
+		<position>breadcrumbsload</position>
+		<position>dropmenu</position>
+		<position>sidebar-1</position>
+		<position>random-images</position>
+		<position>syndicate</position>
+		<position>debug</position>
+		<position>position-0</position>
+		<position>user1</position>
+		<position>user2</position>
+		</positions>
+
+</extension>

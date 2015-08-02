@@ -1,0 +1,544 @@
+/*_______________GENERAL SETUP________________*/
+body, html { font-size:13px; font-family:Geneva, Arial, Helvetica, sans-serif; margin:0; padding:0 }
+#body { background:#fff url(../images/bg.png) top repeat-x }
+html { height:100.1% }
+h1, h2, h3, h4, h5, h6, label, legend, fieldset, div, form { margin:0; padding:0; border:0 }
+table { border-collapse:collapse }
+td { vertical-align:top }
+a img, :link img, :visited img, img { border:0; outline:none }
+#wrapper, #footer, #copyright { color:#333 }
+a { color:#0d729b; outline:none; text-decoration:none; }
+a:hover { color:#075878 }
+p, div { font-weight:normal }
+button{cursor:pointer}
+
+/*___________________MAIN LAYOUT________________*/
+#wrapper { width:960px; margin:0 auto 20px auto; padding:0 0 10px 0; background:#fff; -moz-box-shadow:0 0 20px #333; -webkit-box-shadow:0 0 20px #333; box-shadow:0 0 20px #333; }
+#headerLogo { width:960px; height:140px; margin:0 auto; background:url(../images/CC_header.jpg) no-repeat  }
+#logo { width:339px; height:119px; float:left; margin:0 }
+#navBar { background: url(../images/nav.png) repeat-x; width:960px; height:52px; margin:0 auto }
+#topRight { width:620px; height:140px; float:right; margin:0; padding:0 }
+#breadcrumb { height:28px; padding:20px 25px 0 0; margin:0; float:right; font-size:.8em }
+#content { width:940px; margin:0 auto}
+#mainRight { width:618px; float:right; padding:5px 15px; margin:15px 0; background:#eee; border:1px dashed #ccc; }
+#mainFull { width:924px; padding:0; margin:10px auto 20px auto }
+#sidebar1 { width:285px; float:left; margin:18px 0; padding:0 }
+#copyright { float:left; width:580px; margin:0 0 0 20px; padding:15px 0 5px 0; font-size:.8em }
+
+/*__________VERTICAL SIDE MENU STYLES________*/
+ul.menu { margin:0; padding:0; z-index:50 !important }
+ul.menu li { list-style:none; margin:0; padding:0; z-index:50 !important }
+ul.menu span { display:block; height:18px; line-height:18px; padding-left:0 }
+ul.menu a { display: block; float: left; font-size: 1.2em; height: 42px; line-height: 42px; overflow: hidden; padding: 0 10px; white-space: nowrap; z-index: 50 !important; text-decoration:none; color:#000;}
+ul.menu a:hover { color:#fff; }
+ul.menu ul { margin:0; padding:0 }
+ul.menu ul a { text-indent:0; z-index:50 !important; cursor:pointer }
+ul.menu ul li a, ul.menu ul li a:hover, ul.menu li.active li a {  text-align:left; margin:0; font-weight:normal }
+ul.menu li.active li a:hover { cursor:pointer; }
+ul.menu li li { padding:0; margin:0; z-index:50 !important }
+ul.menu li a {/* padding-left:9px;*/ z-index:50 !important }
+ul.menu li.active a { text-decoration:none; z-index:50 !important ; color:#fff;}
+ul.menu li a:hover, ul.menu li.active li a:hover { text-decoration:none; }
+ul.menu li.active li a { z-index:50 !important; text-decoration:inherit; font-weight:normal } 
+
+/*__________BOTTOM MENU STYLES (position-user2)________*/
+ul.menu_bottom { list-style:none; margin:20px 0 0 20px; width:200px; float:right }
+ul.menu_bottom li {float:left; padding:0 7px; line-height:10px; border-left:1px solid #535252;}
+ul.menu_bottom li:first-child {border:0;}
+ul.menu_bottom li a {font-size:11px; line-height:10px;}
+ul.menu_bottom li a:hover {}
+
+/*__________MODULE STYLES________*/
+/* DEFAULT MODULES (position=sidebar-1) */
+#sidebar1 > .moduletable, .moduletable_menu, .moduletable_text { padding:8px 0 15px 0; margin:0 0 15px 6px; width:265px; -moz-box-shadow:0 0 10px #babcbc; -webkit-box-shadow:0 0 10px #babcbc; box-shadow:0 0 10px #babcbc; background:#fff; position:relative; overflow:hidden }
+#sidebar1 > .moduletable h3, .moduletable_menu h3, .moduletable_text h3 { width:230px; padding:10px 0 4px 0; margin:0 auto; font-weight:bold; font-size:15px }
+#sidebar1 > .moduletable .cont, .moduletable_text .cont { width:230px; margin:0 auto; padding:5px 0 0 0 }
+#sidebar1 > .moduletable .cont ul, .moduletable_text .cont ul { margin:0; padding:0; border:0 }
+.moduletable_menu .cont ul { margin:0 0 0 20px; padding-left:9px }
+.moduletable_menu .cont ul ul { margin:0 0 0 5px; padding-left:9px }
+#sidebar1 > .moduletable li, .moduletable_text li { margin:0; padding:0 0 0 9px; list-style:none; background:url(../images/menu-list.gif) no-repeat 0 6px; line-height:17px }
+#sidebar1 > .moduletable .cont p { margin:0; padding:0 }
+.moduletable h4 { font-size:15px }
+.itp-socialbuttons-mod a { text-decoration:none }
+
+
+/* RANDOM IMAGE MODULE (position=random-images) */ 
+.moduletable_randomImages { width:960px; height:267px; margin:6px auto 10px auto  }
+
+
+/* Search Module (position=position-0) */
+#search { height:32px; margin:15px 55px 0 0; float:right }
+#search .search .inputbox { background:none; border:0; padding:2px; font-size:0.9em; outline:none; width:165px; color:#000 }
+
+/*Newsletter Sign Up Module (position=sidebar-1) */
+.subbutton { float:right }
+
+/* Home Page Modules (position=user1) */
+.moduletable_user1 { float:left; padding:5px 0; margin:10px 5px; width:312px; background:#f5f6f6; overflow:hidden; border:1px dashed #d6d5d5 }
+.moduletable_user1 h3 { width:230px; padding:10px 0 0 0; margin:0 auto; font-weight:bold; font-size:15px }
+.moduletable_user1 .cont, .moduletable_user1 p { width:230px; margin:0 auto; padding:7px 0 }
+.moduletable_user1 .cont ul { margin:0; padding:0; border:0 }
+.moduletable_user1 .cont ul ul { margin:0 0 0 5px; padding-left:9px }
+.moduletable_user1 li { margin:0; padding:0 0 0 9px; list-style:none; background:url(../images/menu-list.gif) no-repeat 0 6px; line-height:17px }
+.moduletable_user1 .custom_user1 { padding-bottom:10px }
+
+/*by ashish sharma 14march2013*/
+
+.moduletable_menu{ display: block; float: right; height: 42px; list-style: none outside none; margin: 0 10px 0 0; padding: 0; position: inherit; z-index: 50 !important; width:auto; box-shadow:none; background:none;}
+.moduletable_menu ul.menu{ float: left; list-style: none outside none; margin: 0; padding: 0; z-index: 50 !important;}
+.moduletable_menu ul.menu li{display: block; float: left; position: relative; list-style-type:none; background-image:url("../images/menu-r.gif"); background-position: 100% -56px; background-repeat:no-repeat;}
+.moduletable_menu ul.menu li.active, .moduletable_menu ul.menu li:hover{background-position:100% 0; color:#fff;}
+*{margin:0; padding:0;}
+.moduletable_facebook {float:left; position:absolute; top:15px; right:10px;}
+.moduletable_facebook li{list-style-type:none;}
+#loginmodulearea{background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 10px #BABCBC;
+    margin: 0 0 15px 6px;
+    overflow: hidden;
+    padding: 8px 0 15px;
+    position: relative;
+    width: 265px;}
+	
+.moduletable_twitter{float:left; position:absolute; top:15px; right:38px;}	
+.moduletable_login{clear:both;}
+
+.moduletable_twitter .slogin-buttons a {
+    display: block;
+    width: auto;
+    padding:0;
+    margin:0;
+}
+.moduletable_twitter .slogin-buttons a, .moduletable_twitter .slogin-buttons a:hover {
+    border: 0 none;
+    border-radius:0px;
+    text-decoration:none;
+    float: left;
+}
+
+.moduletable_login h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 auto 5px;
+    padding: 10px 0 5px;
+    width: 230px;
+	border-bottom:1px solid #ccc;
+}
+.moduletable_login form#login-form{  margin: 0 auto;
+    padding: 5px 0 0;
+    width: 230px;}
+.moduletable_login form#login-form fieldset.userdata{margin-bottom:5px;}
+.moduletable_login li{list-style-type:none;}
+.moduletable_login li a{text-decoration:none; padding:0px 0; display:block; color:#333;}
+.moduletable_login li a:hover{color:#0D729B; text-decoration:underline;}
+
+.moduletable h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px 0 4px;
+    width: 230px;
+}
+.notificationwrapper{
+    margin: 0 auto;
+    padding: 5px 0 0;
+    width: 230px;
+}
+
+.notificationwrapper .reveal-modal li{list-style-type:none; margin:10px 0;}
+.login-greeting{color:#0D729B; font-weight:bold;}
+
+a#removefriend.button{color:#fff !important; text-align:center; text-decoration:none; display:block; padding:2px;}
+
+.profile-edit input{width:184px; height:14px; padding:4px; background:#fff; border:1px solid #ccc;}
+.profile-edit input#filename{height:auto; border:1px solid #ccc;}
+.profile-edit select#jform_country{width:196px; height:24px; padding:0px; background:#fff; border:1px solid #ccc;}
+.profile-edit select#jform_gender{width:196px; height:24px; padding:0px; background:#fff; border:1px solid #ccc;}
+.profile-edit input[type="button"]{background:url("../images/button.png") no-repeat scroll 0 0 transparent; color:#fff; width:80px; height:22px; border:0 none; cursor:pointer; }
+.profile-edit textarea{width:194px; float:left;}
+.profile-edit select#access_select{background:#fff; border:1px solid #ccc;}
+
+#localchurchs_parent a{margin-left:12px;}
+#otherchurchs_parent a{margin-left:12px;}
+
+#otherchurchs_parent p{padding-top:10px;}
+#otherchurchs_parent p.first{padding:0;}
+
+button.validate{background:none; border:0 none; margin:0; padding:0; cursor:pointer;}
+button.validate span span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:0 10px 0 0px; display:block;}
+button.validate span{padding:0 0px 0 10px; display:block; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:20px;}
+.profile-edit a.submitcancel{padding:0 0px 0 10px; display:block; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:22px; text-decoration:none; float:left;}
+.profile-edit a.submitcancel span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:0 10px 0 0px; display:block; float:left;}
+
+.profile-edit a#addScnt span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:4px 8px 4px 0px;}
+.profile-edit a#addScnt{padding:4px 0px 4px 10px; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:22px; text-decoration:none;}
+
+.profile-edit a.modal{padding:4px 0px 4px 10px; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:22px; text-decoration:none;}
+.profile-edit a.modal span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:4px 10px 4px 0px;}
+
+.profile-edit a#otheraddScnt{padding:4px 0px 4px 10px; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:22px; text-decoration:none;}
+.profile-edit a#otheraddScnt span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:4px 10px 4px 0px; }
+
+.submitarea{clear:both; margin:15px 0 0 150px;}
+
+
+.loginresetfield li{list-style-type:none; float:left; margin-right:10px;}
+.loginresetfield a{color:#333; text-decoration:none;}
+.loginresetfield a:hover{color:#0D729B; text-decoration:underline;}
+
+input[type="text"]{background:#fff; border:1px solid #ccc; height:16px; padding:4px; background:#fff; border:1px solid #ccc;}
+input[type="email"]{background:#fff; border:1px solid #ccc; height:16px; padding:4px; background:#fff; border:1px solid #ccc;}
+input[type="password"]{background:#fff; border:1px solid #ccc; height:16px; padding:4px; background:#fff; border:1px solid #ccc;}
+.profile a.button{padding: 2px 5px 6px 7px; text-decoration:none;}
+.profile a.button:hover{text-decoration:none; color:#fff;}
+.reset {padding: 10px 0;}
+
+
+fieldset.adminform input[type="text"]{width:184px; height:14px; padding:4px; background:#fff; border:1px solid #ccc;}
+fieldset.adminform input#filename{height:auto; border:1px solid #ccc;}
+fieldset.adminform select#jform_country{width:196px; height:24px; padding:0px; background:#fff; border:1px solid #ccc;}
+fieldset.adminform input[type="file"]{background:#fff; width:180px; height:24px; border:0 none; cursor:pointer; }
+fieldset.adminform textarea{width:194px; float:left;}
+fieldset.adminform select#jform_category{width:196px; height:24px; padding:0px; background:#fff; border:1px solid #ccc;}
+
+form#search-friend{float:left; width:100%; margin:10px 0;}
+form#search-friend input{float:left; margin:0 10px 0 0;}
+form#search-friend label{float:left; margin-right:10px;}
+
+form#friends{float:left; width:100%; margin:10px 0 0;}
+.list-footer{float:left; width:100%;}
+
+.searchedfriendswrapper ul.friends li {
+    border: 1px solid #CCCCCC;
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 10px 25px 10px 0;
+    padding: 15px !important;
+    width: 94% !important;
+	min-height:auto;
+	background:#f6f6f6;
+}
+.friendname{/*margin:0 10px; padding:5px 0; */display:block; word-wrap:break-word; float:left; margin-left:10px; width:75%; }
+.friends a{color:#333; text-decoration:none;}
+.friends a:hover{color:#0D729B; text-decoration:none;}
+.searchedfriendswrapper{width:100% !important;}
+#search-friend label{font-weight:bold;}
+
+.counter{float:left; background:#0D729B; color:#fff; padding:5px 10px; margin:5px; cursor:pointer; margin:10px 0;}
+.limit{color:#0D729B; font-weight:bold;}
+.liwidth{width:auto !important;}
+
+.friendprofileimage{float:left; border:1px solid #ccc;}
+.friendprofileimage span#addfriend{display:block;}
+.friendprofileimage span a{color:#fff; text-decoration:none; line-height:22px; width:80px; text-align:center; margin:5px 2px; display:block; background:url("../images/button.png") no-repeat scroll 0 0 transparent;}
+.friendprofileimage span a:hover{color:#fff; text-decoration:none;}
+
+.frineddataclass{float:right; padding:8px 16px; background:#0d729b; color:#fff; border-top:1px solid #eee;}
+.friendvisiblearea{float:left;}
+
+.profilefriend {
+    border: 1px solid #ccc;
+    float: left;
+    padding: 4px;
+	background:#eee;
+}
+.sharesocial img{width:22px; margin:5px 5px 5px 0;}
+
+.allmessagedata ul li.friendmessage {
+    border: 1px solid #CCCCCC;
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 10px 25px 10px 0;
+    padding: 15px !important;
+    width: 94% !important;
+	min-height:auto;
+	background:#f6f6f6;
+}
+.allmessagedata ul li.friendmessage a{color:#333; text-decoration:none; word-wrap:break-word;}
+.allmessagedata ul li.friendmessage a:hover{color:#0d729b; text-decoration:none;}
+
+.sendername{ background:#0d729b; border:1px solid #ccc; margin:0 0 10px;}
+.sendername a{padding:5px; display:inline-block; color:#fff !important; word-wrap:break-word;}
+.fancybox-inner div {
+    float: left;
+    margin: 10px 0 0;
+}
+.messagesubject label{float:left; text-align:left; width:80px;}
+.fancybox-inner input{float:left;}
+
+.messagebody label{float:left; text-align:left; width:80px;}
+.messagebody textarea#messagebody{width:150px;}
+
+.friendvisiblearea a.sendmessagebutton{padding:4px 0px 4px 10px; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:22px; text-decoration:none;}
+.friendvisiblearea a.sendmessagebutton span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:4px 10px 4px 0px;}
+
+
+.reveal-modal ul li.friendmessage {
+    border: 1px solid #CCCCCC;
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 10px 25px 10px 0;
+    padding: 15px !important;
+    width: 94% !important;
+	min-height:auto;
+	background:#f6f6f6;
+}
+.fancybox-inner button{float:left;}
+button.button{background:none; border:0 none; padding:0; margin:0;}
+button.button span span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:0 10px 0 0px; display:block; line-height:18px;}
+button.button span{padding:0 0px 0 10px; display:block; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:20px;}
+
+.counter.-chk{background:none;}
+.showallmessages a{text-decoration:none; font-weight:bold; padding-bottom:15px;}
+
+.reveal-modal ul li.friendrequest {
+    border: 1px solid #CCCCCC;
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 10px 25px 10px 0;
+    padding: 15px !important;
+    width: 94% !important;
+	min-height:auto;
+	background:#f6f6f6;
+}
+
+.acceptremove a span span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:0 10px 0 0px; display:block;}
+.acceptremove a span{padding:0 0px 0 10px; display:block; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:20px;}
+.acceptremove a{text-decoration:none; float:left; margin:5px 0 0;}
+
+.moduletable_randomImages {
+    height: 267px;
+    margin: 6px auto 10px;
+    width: 960px;
+}
+.messages{float:left; display:block; width:100%; margin:5px 0; color:#333; text-decoration:none; font-weight:bold; font-size:15px;}
+
+.inboxmessages{float:left; display:block; width:100%; margin:5px 0;}
+.inboxmessages a{color:#333; text-decoration:none; font-weight:bold; font-size:15px;}
+
+
+.friendemailname{padding:5px; display:block;background:#0d729b; border:1px solid #ccc; color:#fff; margin:0 0 10px; cursor:pointer;}
+.messagesubject{padding:5px 0;}
+.message-posted-on{padding:5px 0;}
+#localchurchs_parent a.modal{margin-left:0px;}
+
+.friendname a{color:#333;}
+.friendname a:hover{color:#0d729b;}
+
+.acceptremoverequest a span span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:0 7px 0 0px; display:block;}
+.acceptremoverequest a span{padding:0 0px 0 7px; display:block; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:20px; margin:0 2px 5px 0;}
+.acceptremoverequest a{text-decoration:none; float:left; margin:5px 0 0;}
+
+.sharemessagearea{}
+
+.finalacceptrequest{background:#ddd; border:1px dashed #ccc; padding:5px;}
+
+.fancybox-inner button{background:none; border:0 none; padding:0; margin:0;}
+.fancybox-inner button span{padding:0 0px 0 10px; display:block; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:20px; cursor:pointer; }
+.fancybox-inner button span span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:0 10px 0 0px; display:block;}
+
+#unreadmessage a{float:left; margin:5px 0px 0 10px;}
+#unreadmessage a span{padding:0 0px 0 10px; display:block; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:20px; cursor:pointer; }
+#unreadmessage a span span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:0 10px 0 0px; display:block;}
+
+#deletemessage a{float:left; margin:5px 0px 0 10px;}
+#deletemessage a span{padding:0 0px 0 10px; display:block; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:20px; cursor:pointer; }
+#deletemessage a span span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:0 10px 0 0px; display:block;}
+
+.removefriend{ 
+    white-space:nowrap;
+	width:80px; 
+	height:22px; 
+	line-height:14px;
+	border:0; 
+	padding:3px 0; 
+	margin:5px 0 0 10px; 
+	color:#fff !important; 
+	font-size:12px; 
+	background:url(../images/button.png) no-repeat;
+	display:block;
+	text-align:center;
+	float:left;
+}
+
+#friendmessagearea a#mesasge_unread span{padding:0 0px 0 10px; display:block; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:20px; cursor:pointer; float:left; }
+#friendmessagearea a#mesasge_unread span span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:0 10px 0 0px; display:block;}
+
+#message-myModal > ul{float:left; width:100%}
+
+.messagereply{margin-left:5px; float:left;}
+.messagereply a span{padding:0 0px 0 10px; display:block; background:url("../images/button-left.png") no-repeat scroll left top transparent; height:22px; color:#fff; line-height:20px; cursor:pointer; float:left; }
+.messagereply a span span{background:url("../images/button-right.png") no-repeat scroll right top transparent; border:0 none; margin:0; padding:0 10px 0 0px; display:block;}
+
+
+.searchedfriendswrapper ul.friends li a.modal{float:left;}
+.buttonnmewrapper{float:left;}
+
+.friendname1{float:left; margin-left:10px;}
+
+.profilenotifyimage{float:left;}
+.profilenotifyimage-message{ position:absolute; left:0; top:0;}
+.messagebody{float:left; margin-left:10px; width:75%;}
+.messagebody a{color:#333; font-weight:bold;}
+.messagebody a:hover{color:#0d729b;}
+
+.messageinfo{float:left; word-wrap:break-word; margin-left:110px; width:75%;}
+.friendmessagearea_message{float:left; width:100%; position:relative;}
+.friendemailname{}
+.messagesubject_message{ padding:5px 0; font-weight:bold;}
+.messagebody_message{}
+.message-posted-on{}
+.markreplyunread{}
+
+.fancybox-inner .messagebody{float:left; width:100%;}
+.fancybox-inner .messagebody label{float:left; text-align:left; width:80px;}
+.fancybox-inner .messagebody textarea#messagebody{width:150px;}
+.fancybox-inner h3{color:#000; font-size:13px; font-weight:bold;}
+
+
+.friendinfo{float:left; word-wrap:break-word; margin-left:10px;}
+.requestreject{margin-left:5px !important;}
+
+.mainRight form#adminForm{float:left; margin:10px 0; width:100%;}
+.mainRight form#adminForm label{float:left; margin-right:10px;}
+form#adminForm select{float:left; background:#eee; border:1px solid #ccc; width:160px; height:22px; margin-right:10px;}
+
+.searchdrop{margin:10px 0;}
+.legend{float:left; width:100%;}
+.searchdrop input{margin-left:5px;}
+
+.legend ul li{float:left; list-style-type:none; padding:0 10px;}
+.legend ul{margin:10px 0; float:left; background:#0d729b; color:#fff; padding:10px 0; width:100%;}
+
+.searchresult{float:left; line-height:22px; width:95%; background:#f6f6f6; border: 1px solid #ccc; padding:15px;}
+.searchresult span{font-weight:bold; line-height:30px;}
+.searchresult table{width:100%;}
+
+h3.cname{padding:5px; display:block; margin:5px 0; background:#0d729b; color:#fff; font-size:14px;}
+span.fullchurch a{color:#333; font-weight:bold;}
+span.fullchurch a:hover{color:#0d729b;}
+
+#map_canvas{width:620px; height:300px; background-color: #E5E3DF; overflow: hidden; position: relative;}
+
+.searchpage .counter{padding:0;}
+.searchpage.pagination{padding:0; float:left; margin:0 0 0 -3px;}
+
+
+
+.listmychurch {background: none repeat scroll 0 0 #F3F3F3; border: 1px solid #CCCCCC; float: left; margin-top: 15px; width: 95%; padding:15px;}
+.listmychurch img {float: left; margin-right: 15px; width: 150px;}
+.listmychurch h3 {float: left; width: 70%;}
+.fullchurch{float:left; width:100%;}
+.listmychurch .fullchurch{float:left; width:70%;}
+h3.churchhead{margin:10px 0;}
+
+.churchimage {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 15px;
+    width: 95%;
+	margin-bottom:15px;
+}
+.churchprofileimg {
+    float: left;
+    height: 293px;
+    margin-right: 15px;
+    width: 460px;
+}
+.churchprofileimg > img {
+    height: 292px;
+    width: 460px;
+}
+.churchshortimg {
+    float: left;
+    margin-bottom: 15px;
+}
+.churchshortimg > img {
+    height: 138px;
+	width:112px;
+}
+.churchlog > img {
+    height: 138px;
+	width:112px;
+}
+
+.churchaddress{float:left;}
+
+.leadhead {
+    background: none repeat scroll 0 0 #0D729B;
+    border: 1px solid #CCCCCC;
+    color: #FFFFFF;
+    float: left;
+    margin: 10px 0;
+    padding: 15px;
+    width: 95%;
+}
+.churchaddress {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 1px solid #CCCCCC;
+    float: left;
+    line-height: 20px;
+    padding: 15px;
+    width: 95%;
+}
+.address {
+    float: left;
+    width: 100%;
+}
+
+.phone {
+    float: left;
+    width: 100%;
+}
+.Website {
+    float: left;
+    width: 100%;
+}
+ul.lead{float:left; width:100%;}
+ul.lead li{list-style-type:none;}
+
+.frndhead{float:left; margin:15px 0; color:#333; font-weight:bold; width:100%;}
+
+.frndchurch li.frndchurch {
+    background: none repeat scroll 0 0 #F6F6F6; border: 1px solid #CCCCCC; float: left; margin-bottom: 15px; padding: 15px; width: 95%; list-style-type:none;
+}
+
+.frndchurch li.frndchurch img{float:left; margin-right:15px;}
+.frndchurch li.frndchurch span.frndname{float:left; color:#333;}
+.frndchurch li.frndchurch span.frndname:hover{color:#0d729b;}
+
+.frndcount{float:left; width:100%;}
+
+.subscibestatus a {color: #333333; float: left; line-height: 20px; margin: 0 10px 0 0;}
+.subscibestatus a:hover{color:#0d729b;}
+
+.subscibestatus {float: left; padding: 0; width: 100%;}
+
+#updhelloworld .churchaddress{}
+h3.subscribhead{padding:15px 0;}
+
+.leadcount{float:left; clear:left;}
+
+.fullchurch li.leadchurch {
+    background: none repeat scroll 0 0 #F6F6F6; border: 1px solid #CCCCCC; float: left; margin-bottom: 15px; padding: 15px; width: 95%; list-style-type:none;
+}
+
+.fullchurch li.leadchurch img{float:left; margin-right:15px;}
+.fullchurch li.leadchurch span.leadname{float:left;}
+
+.linkedit{float:left; margin-right:10px; width:100%}
+.linkedit a{float:left; color:#333; padding:0 10px 0 0;}
+.linkedit a:hover{color:#0d729b;}
+
+.linkaddlead{float:left; width:100%;}
+.linkaddlead a{float:left; color:#333; padding:0 10px 0 0;}
+.linkaddlead a:hover{color:#0d729b;}
+.mar-b15 {margin-bottom:15px;}
+
+.pagenavformat{float:left; margin:10px 0; width:100%;}
+.pagenavformat a{color:#333; margin-right:5px; background:#f6f6f6; border:1px solid #ccc; padding:5px 10px;}
+.pagenavformat a:hover{color:#fff; background:#0d729b;}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="find church default view" option="com_christianconnect_view_default_option">
+		<help
+			key = "_MENUS_MENU_ITEM_USER_PROFILE"
+		/>
+		<message>
+			<![CDATA[com_christianconnect_default_desc]]>
+		</message>
+	</layout>
+</metadata>

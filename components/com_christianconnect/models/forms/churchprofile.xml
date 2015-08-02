@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_christianconnect/models/fields" >
+			<field name="cname" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_NAME_LABEL"
+            description="COM_CHRISTIAN_CHURCH_NAME_DESC" required="true"/> 
+            
+            <field name="description" type="textarea" default="" cols="50" rows="8"
+            label="COM_CHRISTIAN_CHURCH_DESCRIPTION_LABEL"
+            description="COM_CHRISTIAN_CHURCH_DESCRIPTION_DESC"/> 
+            
+            <field name="category" type="category" default="" 
+            label="COM_CHRISTIAN_CHURCH_CATEGORY_LABEL" class="inputbox validate-category"      
+            description="COM_CHRISTIAN_CHURCH_CATEGORY_DESC" required="true" /> 
+            
+			<field name="address1" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_ADDRESS1_LABEL"
+            description="COM_CHRISTIAN_CHURCH_ADDRESS1_DESC" required="true" /> 
+            
+             <field name="address2" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_ADDRESS2_LABEL"
+            description="COM_CHRISTIAN_CHURCH_ADDRESS2_DESC"  /> 
+            
+             <field name="city" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_CITY_LABEL"
+            description="COM_CHRISTIAN_CHURCH_CITY_DESC" required="true" /> 
+            
+             <field name="state" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_STATE_LABEL"
+            description="COM_CHRISTIAN_CHURCH_STATE_DESC" required="true" /> 
+            
+             <field name="country" type="country" default="" 
+            label="COM_CHRISTIAN_CHURCH_COUNTRY_LABEL" class="inputbox validate-country" 
+            description="COM_CHRISTIAN_CHURCH_COUNTRY_DESC" required="true" /> 
+            
+             <field name="postcode" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_POSTCODE_LABEL"
+            description="COM_CHRISTIAN_CHURCH_POSTCODE_DESC"  /> 
+            
+             <field name="phone" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_PHONE_LABEL" class="inputbox validate-phone"
+            description="COM_CHRISTIAN_CHURCH_PHONE_DESC"  /> 
+            
+             <field name="siteurl" type="text" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_WEBSITE_LABEL"
+            description="COM_CHRISTIAN_CHURCH_WEBSITE_DESC"  /> 
+            
+              <field name="profileimage1" type="file" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_PROFILEIMAGE_LABEL"
+            description="COM_CHRISTIAN_CHURCH_PROFILEIMAGE_DESC" /> 
+            
+              <field name="profileimage2" type="file" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_PROFILEIMAGE2_LABEL"
+            description="COM_CHRISTIAN_CHURCH_PROFILEIMAGE2_DESC" /> 
+            
+              <field name="logo" type="file" default="" size="33"
+            label="COM_CHRISTIAN_CHURCH_PROFILELOGO_LABEL"
+            description="COM_CHRISTIAN_CHURCH_PROFILELOGO_DESC" /> 
+            
+            <field name="id" type="hidden" default="" size="33"
+            label="COM_CHRISTIAN_CHURCHID_LABEL"
+            description="COM_CHRISTIAN_CHURCHID_DESC" required="true"/> 
+          
+	</fieldset>
+
+</form>

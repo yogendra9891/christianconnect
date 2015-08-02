@@ -1,0 +1,33 @@
+<?php
+/**
+ * @package		Joomla.Site
+ * @subpackage	com_users
+ * @copyright	Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+defined('_JEXEC') or die;
+
+require_once JPATH_COMPONENT.'/controller.php';
+require_once('components/com_users/helpers/users.php');
+/**
+ * Profile controller class for Users.
+ *
+ * @package		Joomla.Site
+ * @subpackage	com_users
+ * @since		1.6
+ */
+class UsersControllerProfile extends UsersController
+{
+	/*
+	 * uplaod a profile image by ajax..
+	 */
+	public function uploadprofileimage()
+	{		echo "ss"; exit;
+		$fieldname = JRequest::getVar('fname', '', 'GET', 'string');
+		$file = JRequest::getVar( $fieldname, '', 'files', 'array' );
+		$response = UsersHelper::ajaxUpload($file);
+		echo json_encode($response);
+		return;
+	}
+}

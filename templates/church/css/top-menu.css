@@ -1,0 +1,112 @@
+/* COPYRIGHT JOOMLATEMPLATESHOP.NET AND DESIGN-ESSENTIALS.NET ALL RIGHTS RESERVED */
+
+/*TOP MENU */
+.moduletable_dropmenu { /* main class for module */
+	padding:0 0 0 0;
+	float:right;
+	margin:0 10px 0 0;
+	height:42px;
+	position:inherit;
+	z-index:50 !important;
+	list-style:none;
+	display:block;
+}
+
+/* hover -- background  */
+.moduletable_dropmenu a { color:#000; background-image: url(../images/menu-l.gif); text-decoration:none; outline:none }
+.moduletable_dropmenu li { background-image: url(../images/menu-r.gif); outline:none}
+
+.moduletable_dropmenu ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:left;
+	z-index:50 !important
+}
+.moduletable_dropmenu li {
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	z-index:50 !important
+}
+.moduletable_dropmenu a, .moduletable_dropmenu li.active a {
+	white-space:nowrap;
+	display:block;
+	float:left;
+	height:42px;
+	line-height:42px;
+	padding:0 10px;
+	font-size:1.2em;
+	overflow:hidden;
+	z-index:50 !important
+}
+.moduletable_dropmenu a {
+	background-position: 0 -56px;
+	background-repeat: no-repeat;
+	z-index:50 !important
+}
+.moduletable_dropmenu li {
+	background-position: 100% -56px;
+	background-repeat: no-repeat;
+	z-index:50 !important
+}
+.moduletable_dropmenu li:hover a, .moduletable_dropmenu li.active a { background-position:0 0; z-index:50 !important; color:#fff }
+.moduletable_dropmenu li:hover, .moduletable_dropmenu li.active { background-position:100% 0; z-index:50 !important; color:#fff }
+
+
+
+/* ---- LINKS ----*/
+/* all menu links */
+#nav ul {	
+	/*border around submenu goes here*/	 
+	background:#0d729a;
+	left:0;
+	margin:0;
+	padding:0;
+	border-top:1px solid #066489;
+	border-right:1px solid #066489;
+	border-left:1px solid #066489
+}
+#nav a { display:block }
+#nav li { display:block; float:left; position:relative }
+
+/* submenu item */
+#nav li li {
+    display:inline-block;
+	float:none;
+	width:18em;
+	height:27px;
+	line-height:27px;
+	background-image:none;
+	border-bottom:1px solid #066489
+}
+#nav li li a { /* Just submenu links*/	
+	position:relative;
+	float:none; 
+	background-image:none;
+	line-height:27px;
+	height:27px;
+	text-align:left;
+	font-size:13px;
+	font-weight:normal
+}
+#nav li li a:hover, #nav li li:hover { background:#1192c6 }
+#nav li ul { /* first-level lists */
+	position: absolute;
+	top:39px; /* first level ul top margin */
+	left:9.3em;
+	margin-left: -1000em;  /* using left instead of display to hide menus because display: none isn't read by screen readers */
+}
+/* second-third-and-above-level lists */
+#nav li ul ul { margin: -4em 0 0 -1000em; background-image:none }
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li:hover ul ul ul ul { margin-left: -1000em }
+
+ /* lists nested under hovered list items */
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li li li li:hover ul {	margin-left: -120px; background-image:none; display:block  }
+
+#nav li li:hover ul, /* second level */
+#nav li li li:hover ul, /* 3rd level */
+#nav li li li li:hover ul /* 4th level */
+{ margin-left:9em; margin-top:-39px; background-image:none } 
+

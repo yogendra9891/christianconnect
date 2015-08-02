@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="core"
+		label="COM_USERS_PROFILE_DEFAULT_LABEL">
+
+		<field name="id" type="hidden"
+			filter="integer"
+		/>
+
+		<field name="name" type="text"
+			description="COM_USERS_PROFILE_NAME_DESC"
+			filter="string"
+			label="COM_USERS_PROFILE_NAME_LABEL"
+			message="COM_USERS_PROFILE_NAME_MESSAGE"
+			required="true"
+			size="30"
+		/>
+
+		<field name="name_access" type="accessibility"
+			description="COM_USERS_PROFILE_NAME_DESC"
+			filter="string"
+			message="COM_USERS_PROFILE_NAME_MESSAGE"
+			required="true"
+			size="1"
+		/>
+
+
+		<field name="password1" type="password"
+			autocomplete="off"
+			class="validate-password"
+			description="COM_USERS_DESIRED_PASSWORD"
+			field="password2"
+			filter="raw"
+			label="COM_USERS_PROFILE_PASSWORD1_LABEL"
+			message="COM_USERS_PROFILE_PASSWORD1_MESSAGE"
+			size="30"
+			validate="equals"
+		/>
+
+		<field name="password2" type="password"
+			autocomplete="off"
+			class="validate-password"
+			description="COM_USERS_PROFILE_PASSWORD2_DESC"
+			filter="raw"
+			label="COM_USERS_PROFILE_PASSWORD2_LABEL"
+			message="COM_USERS_PROFILE_PASSWORD2_MESSAGE"
+			size="30"
+		/>
+
+		<field name="email1" type="email"
+			description="COM_USERS_PROFILE_EMAIL1_DESC"
+			filter="string"
+			label="COM_USERS_PROFILE_EMAIL1_LABEL"
+			message="COM_USERS_PROFILE_EMAIL1_MESSAGE"
+			required="true"
+			size="30"
+			unique="true"
+			validate="email"
+		/>
+
+		
+		<field name="email2" type="email"
+			description="COM_USERS_PROFILE_EMAIL2_DESC"
+			field="email1"
+			filter="string"
+			label="COM_USERS_PROFILE_EMAIL2_LABEL"
+			message="COM_USERS_PROFILE_EMAIL2_MESSAGE"
+			required="true"
+			size="30"
+			validate="equals"
+		/>
+		<field name="fname" type="text"
+			description="COM_USERS_REGISTER_FNAME_LABEL"
+			field="fname"
+			filter="string"
+			label="COM_USERS_REGISTER_FNAME_LABEL"
+			message="COM_USERS_REGISTER_FNAME_LABEL"
+			
+			size="30"
+		
+		/>
+
+		<field name="lname" type="text"
+			description="COM_USERS_REGISTER_LNAME_LABEL"
+			field="lname"
+			filter="string"
+			label="COM_USERS_REGISTER_LNAME_LABEL"
+			message="COM_USERS_REGISTER_LNAME_LABEL"
+			
+			size="30"
+		
+		/>
+		<field name="dob" type="calendar"
+			description="COM_USERS_DATE_OF_BIRTH"
+			filter="date"
+			label="COM_USERS_DATE_OF_BIRTH"
+			message="COM_USERS_REGISTER_DATE_OF_BIRTH"
+			required="true"
+			format="%Y-%m-%d"
+			size="30"
+		 />
+
+		<field
+			name="gender"
+			type="list"
+			label="COM_USER_GENDER"
+			description="gender of the user"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option
+				value="male">Male</option>
+			<option
+				value="female">Female</option>
+		</field>
+
+		<field name="address1" type="text"
+			description="COM_USERS_ADDRESS1"
+			field="address1"
+			filter="string"
+			label="COM_USERS_ADDRESS1"
+			message="COM_USERS_ADDRESS1"
+			required="true"
+			size="30"
+		
+		/>
+
+		<field name="address2" type="text"
+			description="COM_USERS_ADDRESS2"
+			field="address2"
+			filter="string"
+			label="COM_USERS_ADDRESS2"
+			message="COM_USERS_ADDRESS2"
+			required="true"
+			size="30"
+		
+		/>
+		<field name="city" type="text"
+			description="COM_USERS_CITY"
+			field="city"
+			filter="string"
+			label="COM_USERS_CITY"
+			message="COM_USERS_CITY"
+			required="true"
+			size="30"
+		
+		/>
+
+		<field name="state" type="text"
+			description="COM_USERS_STATE"
+			field="state"
+			filter="string"
+			label="COM_USERS_STATE"
+			message="COM_USERS_STATE"
+			required="true"
+			size="30"
+		
+		/>
+		<field name="country" type="country"
+			description="COM_USERS_COUNTRY"
+			filter="string"
+			label="COM_USERS_COUNTRY"
+			message="COM_USERS_REGISTER_COUNTRY"
+			required="true"
+			size="1"
+		 />
+		<field name="postcode" type="input"
+			description="COM_USERS_POSTCODE"
+			filter="string"
+			label="COM_USERS_POSTCODE"
+			message="COM_USERS_REGISTER_POSTCODE"
+			required="true"
+			size="30"
+		 />
+
+			<field name="religion" type="input"
+			description="COM_USERS_RELIGION"
+			filter="string"
+			label="COM_USERS_RELIGION"
+			message="COM_USERS_REGISTER_RELIGION"
+			size="30"
+		 />
+
+		<field name="interest" type="input"
+			description="COM_USERS_INTEREST"
+			filter="string"
+			label="COM_USERS_INTEREST"
+			message="COM_USERS_REGISTER_INTEREST"
+			size="30"
+		 />
+		<field name="favouritebiblequote" type="textarea"
+			description="COM_USERS_FAVOURITEBIBLE"
+			filter="string"
+			label="COM_USERS_FAVOURITEBIBLE"
+			message="COM_USERS_REGISTER_FAVOURITEBIBLE"
+			row="5"
+			cols="33"
+		 />
+		<field name="userprofileid" type="hidden" filter="integer"/>
+		<field name="userprofileaccessid" type="hidden" filter="integer"/>
+		<field name="profileimage" type="hidden" filter="string"/>
+		<field name="religionid" type="hidden" filter="integer"/>
+		<field name="otherreligion" type="input" filter="string" size="30"
+			label="Other Religion"
+		/>
+		<field name="userchurchid" type="hidden" filter="integer"/>
+	</fieldset>
+</form>

@@ -1,0 +1,10 @@
+.icon-48-christianconnects {
+      background-image: url(../images/l_christianconnects.png);
+      padding-left:60px!important;
+}
+
+.icon-48-christianconnect {
+      background-image: url(../images/l_christianconnects.png);
+      padding-left:60px!important;
+}
+

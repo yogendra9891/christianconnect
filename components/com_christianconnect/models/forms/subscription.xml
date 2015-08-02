@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form name="subscription">
+	<fieldset name="subscription">
+
+			<field name="fname" type="text" class="inputbox"
+			size="25" label="COM_CHRISTIAN_FNAME_LABEL"
+			description="COM_CHRISTIAN_FNAME_DESC" required="true" />
+		
+			<field name="lname" type="text" class="inputbox"
+			size="25" label="COM_CHRISTIAN_LNAME_LABEL"
+			description="COM_CHRISTIAN_LNAME_DESC"  />
+			
+			<field name="email" type="text" class="inputbox validate-email"
+			size="25" label="COM_CHRISTIAN_EMAIL_LABEL"
+			description="COM_CHRISTIAN_EMAIL_DESC" required="true" />
+			
+			<field name="address1" type="text" class="inputbox"
+			size="25" label="COM_CHRISTIAN_ADDRESS1_LABEL"
+			description="COM_CHRISTIAN_ADDRESS1_DESC" required="true" />
+			
+			<field name="address2" type="text" class="inputbox"
+			size="25" label="COM_CHRISTIAN_ADDRESS2_LABEL"
+			description="COM_CHRISTIAN_ADDRESS2_DESC"  />
+			
+			<field name="city" type="text" class="inputbox"
+			size="25" label="COM_CHRISTIAN_CITY_LABEL"
+			description="COM_CHRISTIAN_CITY_DESC" required="true" />
+			
+			<field name="state" type="text" class="inputbox"
+			size="25" label="COM_CHRISTIAN_STATE_LABEL"
+			description="COM_CHRISTIAN_STATE_DESC" required="true" />
+			
+			<field name="country" type="text" class="inputbox"
+			size="25" label="COM_CHRISTIAN_COUNTRY_LABEL"
+			description="COM_CHRISTIAN_COUNTRY_DESC" required="true" />
+			
+			<field name="postcode" type="text" class="inputbox" 
+			size="25" label="COM_CHRISTIAN_POSTCODE_LABEL"
+			description="COM_CHRISTIAN_POSTCODE_DESC"  />
+			
+			<field name="churchid" type="hidden" class="inputbox"
+			size="25" label="COM_CHRISTIAN_CHURCHID_LABEL"
+			description="COM_CHRISTIAN_CHURCHID_DESC"  />
+			
+			<field name="userid" type="hidden" class="inputbox"
+			size="25" label="COM_CHRISTIAN_USERID_LABEL"
+			description="COM_CHRISTIAN_USERID_DESC"  />
+			
+		
+	</fieldset>
+
+</form>
